@@ -1,0 +1,129 @@
+@import "../../app.scss";
+
+.portfolio {
+    position: relative;
+
+    .progress {
+        left: 0;
+        top: 0;
+        padding-top: 50px;
+        position: sticky;
+        text-align: center;
+        font-size: 35px;
+        color: rebeccapurple;
+
+        @include mobile {
+            padding-top: calc(100vh - 100px);
+            font-size: 27px;        
+        }
+
+        .progressBar{
+            height: 10px;
+            background-color: white; 
+        }
+
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+
+    .wrapper{
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+            flex-direction: column;    
+        }
+
+        
+
+        .imageContainer {
+            flex: 1;
+            height: 50%;
+            width: 100%;
+
+            @include mobile {
+                max-height: 250px;  
+                width: 100%; 
+                   }
+
+            img {
+                flex: 1;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+
+                @include mobile {
+                    object-fit: contain;
+                }
+          
+            }
+        }
+        
+
+
+    .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include mobile {
+           align-items: center;
+        }
+
+        h2{
+            font-size: 62px;
+
+            @include mobile {
+                font-size: 32px;
+                text-align: center;
+                margin-top: 15%;
+            }
+        }
+
+        p{
+            color: grey;
+            font-size: 20px;
+
+            @include mobile {
+                width: 100%;
+                font-size: 15px;
+                padding-left: 15%;
+                padding-right: 15%;
+                text-align: center;
+            }
+        }
+
+        button {
+            background-color: rebeccapurple;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100px;
+            height: 50px;
+
+            @include mobile {
+            width: 80px;
+            height: 40px;
+            }
+        }
+    }
+
+
+
+    }
+
+}

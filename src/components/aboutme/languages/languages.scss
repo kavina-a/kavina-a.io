@@ -1,0 +1,187 @@
+@import "../../../app.scss";
+
+.profileCard {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(27, 44, 104, 0.63);
+  background: linear-gradient(to right, #0d1224, #0a0d37);
+  line-height: 1.7;
+  font-size: 25px;
+
+  @include mobile {
+    line-height: 1.5;
+    font-size: 12px;
+    padding: 1rem;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .line-gradient {
+      height: 1px;
+      width: 100%;
+      background: linear-gradient(to right, transparent, #ec4899, #8b5cf6);
+    }
+
+    .line-gradient-reverse {
+      height: 1px;
+      width: 100%;
+      background: linear-gradient(to right, #8b5cf6, transparent);
+    }
+
+    &.space {
+      gap: 0.5rem;
+
+      .circle {
+        height: 0.75rem;
+        width: 0.75rem;
+        border-radius: 50%;
+
+        &.red {
+          background-color: #ef4444;
+        }
+
+        &.orange {
+          background-color: #f97316;
+        }
+
+        &.green {
+          background-color: #10b981;
+        }
+      }
+    }
+  }
+
+  .header {
+    padding: 1.25rem 2rem;
+
+    @include mobile {
+      padding: 1rem;
+    }
+  }
+
+  .content {
+    overflow: hidden;
+    border-top: 2px solid #3b82f6;
+    padding: 1rem 2rem;
+
+    @include mobile {
+      padding: 0.5rem;
+    }
+
+    .code-block {
+      font-family: monospace;
+      font-size: 1rem;
+
+      @include mobile {
+        font-size: 0.8rem;
+      }
+
+      .blink {
+        display: inline-block;
+
+        .keyword {
+          color: #ec4899;
+        }
+
+        .variable {
+          color: #8b5cf6;
+        }
+
+        .operator {
+          color: #ec4899;
+        }
+
+        .bracket {
+          color: #d1d5db;
+        }
+      }
+
+      .key {
+        margin-left: 2rem;
+        color: #f3f4f6;
+
+        @include mobile {
+          margin-left: 1rem;
+        }
+      }
+
+      .key2 {
+        margin-left: 4rem;
+        color: #f3f4f6;
+
+        @include mobile {
+          margin-left: 2rem;
+        }
+      }
+
+      .key3 {
+        color: #10b981;
+        margin-left: 2rem;
+
+        @include mobile {
+          margin-left: 1rem;
+        }
+      }
+
+      .key4 {
+        color: #f3f4f6;
+      }
+
+      .quote {
+        color: #d1d5db;
+      }
+
+      .value {
+        color: #10b981;
+      }
+
+      .value2 {
+        color: #10b981;
+        margin-left: 5.7rem;
+
+        @include mobile {
+          margin-left: 3rem;
+        }
+      }
+
+      .hireable {
+        color: #10b981;
+        margin-left: 2rem;
+
+        @include mobile {
+          margin-left: 1rem;
+        }
+      }
+
+      .valueFalse {
+        color: #ca2121;
+      }
+
+      .number {
+        color: #fb923c;
+      }
+
+      .comma {
+        color: #d1d5db;
+      }
+
+      .skills {
+        margin-left: 6rem;
+        color: #06b6d4;
+
+        @include mobile {
+          margin-left: 3rem;
+        }
+      }
+
+      .boolean {
+        color: #fb923c;
+      }
+    }
+  }
+}

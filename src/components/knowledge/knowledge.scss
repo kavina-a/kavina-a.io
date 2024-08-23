@@ -1,0 +1,94 @@
+@import "../../app.scss";
+
+.list{
+    position: relative;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    width: 100%;
+    max-width: 1366px;   //said to be one of the most popular break points for height
+    margin: auto;
+
+    @include mobile {
+        padding: 20px;
+    }
+
+
+    .html5 { color: #E34F26; }
+    .css3 { color: #1572B6; }
+    .javascript { color: #F7DF1E; }
+    .csharp { color: #239120; }
+    .java { color: #007396; }
+    .dart { color: #00B4AB; }
+    .python { color: #3776AB; }
+    .php { color: #777BB4; }
+    .react { color: #61DAFB; }
+    .sass { color: #CC6699; }
+    .laravel { color: #FF2D20; }
+    .flutter { color: #02569B; }
+    .figma { color: #F24E1E; }
+    .mysql { color: #4479A1; }
+
+    h1 {
+        align-items: center;
+        font-size: 62px;
+        padding-top: 1%;
+
+        @include mobile {
+            font-size: 30px;
+        }
+
+        &:hover {
+            color: rebeccapurple;
+        }
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-weight: bolder;
+
+        span{
+            font-size: 10px;
+        }
+
+    }
+
+
+.languagesList{
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    font-size: 110px;
+    justify-content: center;
+    gap: 25px;
+    font-size: 110px;
+
+    @include mobile {
+        font-size: 50px;
+        gap: 15px;
+    }
+}
+
+.frameworkList{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+    font-size: 110px;
+
+    @include mobile {
+        font-size: 50px;
+        gap: 15px;
+    }
+}
+
+}
