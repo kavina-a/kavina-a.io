@@ -22,6 +22,12 @@
             background-color: white; 
         }
 
+        // h1{
+        //     @include mobile {
+        //         font-size: 1.5rem; /* Adjust this size as needed */
+        //     }
+        // }
+
     }
 }
 
@@ -66,7 +72,7 @@
                 object-fit: cover;
 
                 @include mobile {
-                    object-fit: contain;
+                    object-fit: cover;
                 }
           
             }
@@ -99,9 +105,9 @@
             font-size: 20px;
 
             @include mobile {
-                width: 100%;
-                font-size: 15px;
-                padding-left: 15%;
+                font-size: 15px; /* Smaller font size for mobile */
+                line-height: 1.4; /* Tighter line height for mobile */
+                padding-left: 15%; /* Adjust padding for centered alignment */
                 padding-right: 15%;
                 text-align: center;
             }
@@ -116,8 +122,9 @@
             height: 50px;
 
             @include mobile {
-            width: 80px;
-            height: 40px;
+                width: 80px;
+                height: 40px;
+                margin-top: -40px; /* Moves the button up on mobile */
             }
         }
     }

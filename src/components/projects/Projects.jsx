@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     name: "Flutter Mobile App",
     image: "/fixitnow.png",
-    description: "FixItNow is an innovative mobile app designed to streamline the process of finding, booking and managing manual labor workers. This project was developed with a focus on providing a seamless experience for users seeking assistance with tasks such as home repairs, landscaping, and moving. FixItNow connects users with reliable professionals in their area, allowing them to browse profiles, read reviews, compare prices, and book services through a user-friendly platform.",
+    description: "Need help with home repairs, landscaping, or moving? Meet FixItNow – your go-to app for finding and booking trusted manual labor professionals in just a few taps. With FixItNow, you can browse profiles, read reviews, and book reliable services quickly, all from a user-friendly platform designed to simplify your life.",
     link: 'https://github.com/kavina-a/FixItNow.git',
   },
   {

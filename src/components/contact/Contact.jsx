@@ -51,7 +51,7 @@ const Contact = () => {
             transition={{duration: 3, delay:1}}>
 
 
-        <svg width="450px" height="450px" viewBox="0 0 64 64" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg viewBox="0 0 64 64" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                
                 <motion.path 
                 // strokeWidth={0.2}
@@ -73,6 +73,7 @@ const Contact = () => {
                 43.4663l-16.5942,2.875l2.4995-15.5054L58.8633,6.0615L36.9146,
                 43.4663     z M54.2427,52.6504l-15.3231-8.6492l21.4231-36.509L54.
                 2427,52.6504z"/>
+
                 </svg>
 
             </motion.div>

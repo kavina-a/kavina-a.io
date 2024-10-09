@@ -28,9 +28,6 @@ const App = () =>{
         <section>
         <Contact />
       </section>
-        
-      
-
 
 
   </div>

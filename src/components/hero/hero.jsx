@@ -15,7 +15,7 @@ const textVariants = {
             duration: 1,
             staggerChildren: 0.1,
         },
-    },
+    }, 
 
     scrollButton : {
         opacity: 0,
@@ -73,7 +73,7 @@ const Hero = () => {
                     <motion.button className= "filledButton" variants={textVariants}>Contact Me</motion.button>
                 </motion.div>
 
-                <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
+                <motion.img variants={textVariants} className="scrollButtonIcon" animate="scrollButton" src="/scroll.png" alt="" />
             </motion.div>
             
             </div>

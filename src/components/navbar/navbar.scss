@@ -3,8 +3,13 @@
 .navbar {
     height: 100px;
 
+    // @include mobile {
+    //     height: 50px;
+    // }
+
     @include mobile {
-        height: 50px;
+        height: 60px; 
+        padding: 0 10px; 
     }
 
     .wrapper{
@@ -23,6 +28,10 @@
 
     span {
         font-weight:bolder;
+
+        @include mobile {
+            font-size: 18px;
+        }
             
     }
 
@@ -32,12 +41,17 @@
         font-size: 50px;
 
         @include mobile {
-            font-size: 20px;
+            font-size: 25px;
         }
     }
 
     .icons {
         color: rebeccapurple;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: white; 
+        }
     }
 
 }

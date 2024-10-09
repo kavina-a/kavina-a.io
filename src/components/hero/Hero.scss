@@ -6,7 +6,11 @@
     position: relative;
     overflow: hidden;
 
+    @include mobile {
+        height: calc(100vh - 60px);
+        padding: 0 10px;
 
+    }
 
 
 .wrapper {
@@ -14,14 +18,14 @@
     height: 100%;
     margin: auto;
 
-         @include mobile {
-        margin-top: -40px;
-    }
+    @include mobile {
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        gap: 20px; 
+        display: flex;
 
-    // @include mobile {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
+    }
 
     .textContainer{
         width: 70%;
@@ -32,23 +36,12 @@
         gap: 40px;
 
         @include mobile {
-            height: 50%;
-            width: 100%;
-            gap: 5px;
+            width: 90%; // Take up more space on mobile
             align-items: center;
-            justify-content: center;
             text-align: center;
+            padding: 20px 10px;
+            gap: 20px; // Reduce spacing between elements for a tighter layout
         }
-
-        // @include tablet {
-        //     width:100%;
-        //     height: 80%;
-        //     display: flex;
-        //     flex-direction: column;
-        //     justify-content: center;
-        //     gap: 10px;
-        //     text-align: center;
-        // }
 
 
         img{
@@ -58,52 +51,43 @@
                 width: 30px;
             }
 
-            // @include tablet {
-            //     width: 30px;
-            // }
         }
 
 
-
-        h2{
+        h2 {
             font-size: 30px;
             color: rebeccapurple;
             letter-spacing: 8px;
             margin-bottom: -40px;
-
+        
             @include mobile {
-                font-size: 15px;
-                margin-bottom: unset;
+                font-size: 20px; // Smaller font on mobile
+                margin-bottom: 5px; // Adjusted margin for a cleaner look
             }
-
-            // @include tablet {
-            //     font-size: 15px;
-            //     margin-bottom: unset;
-            // }
         }
-
-        h1{
+        
+        h1 {
             font-size: 60px;
             color: whitesmoke;
-            
+        
             @include mobile {
                 font-size: 25px;
             }
-
-            // @include tablet {
-            //     font-size: 20px;
-            // }
         }
-
-        .text{
+        
+        .text {
             width: 70%;
+            font-size: 16px;
             text-align: justify;
-
+        
             @include mobile {
+                width: 100%; // Use full width on mobile
                 font-size: 13px;
+                padding: 0 10px;
+                text-align: center; // Center align text on mobile
             }
-            
         }
+        
 
         .buttons {
 
@@ -120,10 +104,10 @@
                 transition: background-color 0.3s ease;
 
                 @include mobile {
-                    font-size: 10px;
-                    padding: 15px;  
-                    margin-bottom: 3px;         
-                     }
+                    padding: 8px 16px; // Smaller padding for mobile
+                    font-size: 12px; // Smaller font size for mobile
+                    margin-bottom: 10px; // Space between stacked buttons
+                }
 
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.1);
@@ -138,11 +122,21 @@
                     &:hover {
                         background-color: rebeccapurple;
                         color: white; 
-
                     }
-            }
+                }
 
+        }
+        @include mobile {
+            flex-direction: column; // Stack buttons vertically on mobile
+            align-items: center; // Center buttons on mobile
+            gap: 10px; // Small gap between buttons on mobile
+        }
+    }
 
+    .scrollButtonIcon {
+         @include mobile {
+            flex-direction: row; // Keep everything in a single row on mobile
+            justify-content: center;
         }
     }
 }
@@ -161,6 +155,10 @@
             object-fit: contain;
         }
 
+        @include mobile {
+            display: none; // Hide the image on mobile
+        }
+
         // @include tablet {
         //     height: 75%; 
         //     width: 100%;
@@ -169,13 +167,21 @@
         //     margin: auto;
         // }
     
-        @include mobile {
-            height: 50%; 
-            width: 100%;    
-            top: unset;
-            bottom: 0;   
-            margin: auto;
-        }
+        // @include mobile {
+        //     height: 50%; 
+        //     width: 100%;    
+        //     top: unset;
+        //     bottom: 0;   
+        //     margin: auto;
+        // }
+
+        // @include mobile {
+        //     position: relative;
+        //     width: 70%;
+        //     height: auto;
+        //     margin: 20px auto 0 auto;
+        // }
+
     }
 
     .slidingTextContainer {
@@ -186,6 +192,12 @@
         white-space: nowrap; //makes it into one single line no matter the length
         font-weight: bold;
         width: 50%;
+
+        @include mobile {
+            font-size: 30vh;
+            bottom: -100px;
+            width: 100%;
+        }
     }
 }
 
