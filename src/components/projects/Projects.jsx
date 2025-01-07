@@ -9,14 +9,14 @@ const projects = [
     name: "Earthify",
     image: "/earthy-cover.png",
     description: "Earthify is your gateway to a greener lifestyle. Discover eco-friendly products, earn Eco Points, and unlock discounts while contributing to a sustainable future. Built with innovation and purpose, Earthify doesn’t just sell products—it empowers change. ",
-    link: 'https://github.com/kavina-a/FixItNow.git',
+    link: 'https://github.com/kavina-a/Earthify.git',
   },
   {
     id: 2,
     name: "Petfinity",
     image: "/Petfinity.png",
     description: "Petfinity is not just another pet app—it’s your ultimate companion for everything pet-related. Built with cutting-edge technology, this all-in-one platform connects pet owners, trainers, and boarders like never before. From seamless appointment bookings to real-time notifications, lost-and-found services, and detailed pet profiles, Petfinity makes caring for your furry friends effortless and stress-free. The future of pet parenting starts here.",
-    link: 'https://github.com/kavina-a/FixItNow.git',
+    link: 'https://github.com/kavina-a/PetfinityCC.git',
   },
   {
     id: 3,
