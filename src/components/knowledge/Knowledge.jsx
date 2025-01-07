@@ -15,6 +15,10 @@ import { DiCss3 } from "react-icons/di";
 import { AiFillHtml5 } from "react-icons/ai"; 
 import './knowledge.scss';
 import { motion } from "framer-motion";
+import { FaNodeJs } from "react-icons/fa"; 
+import { FaCode } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si"; //
+import { SiTailwindcss } from "react-icons/si"; 
 
 
 const iconVariants = (duration) =>({
@@ -112,6 +116,26 @@ const Knowledge = () => {
           <motion.div variants={iconVariants(3.2)} initial='initial' animate='animate' className="item mysql">
             <SiMysql />
             <span>MySQL</span>
+          </motion.div>
+
+          <motion.div variants={iconVariants(3.2)} initial='initial' animate='animate' className="item mongodb">
+            <SiMongodb />
+            <span>MongoDB</span>
+          </motion.div>
+
+          <motion.div variants={iconVariants(3.2)} initial='initial' animate='animate' className="item nodejs">
+            <FaNodeJs />
+            <span>Node.JS</span>
+          </motion.div>
+
+          <motion.div variants={iconVariants(3.2)} initial='initial' animate='animate' className="item expressjs">
+            <FaCode />
+            <span>Express.JS</span>
+          </motion.div>
+
+          <motion.div variants={iconVariants(3.2)} initial='initial' animate='animate' className="item tailwind">
+            <SiTailwindcss />
+            <span>TailWind CSS</span>
           </motion.div>
 
         </div>
