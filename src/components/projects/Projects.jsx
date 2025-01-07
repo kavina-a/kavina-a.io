@@ -7,7 +7,7 @@ const projects = [
   {
     id: 1,
     name: "Earthify",
-    image: "/earthify-cover.png",
+    image: "/earthy-cover.png",
     description: "Earthify is your gateway to a greener lifestyle. Discover eco-friendly products, earn Eco Points, and unlock discounts while contributing to a sustainable future. Built with innovation and purpose, Earthify doesn’t just sell products—it empowers change. ",
     link: 'https://github.com/kavina-a/FixItNow.git',
   },
